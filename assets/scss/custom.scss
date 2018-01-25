@@ -1,20 +1,73 @@
 /** Nơi viết/include các css riêng **/
 .title-leftfoot{font-size:30px;}
-.title{font-size:25px;color:white}
-.sub-title{color:white;}
+.title{font-size:36px;color:white}
+.sub-title{color:white;font-size:14px;}
 .social{
 
-	& a{padding-right: 20px;text-decoration:none;display:block;color:#ca1b1b;
-		&:hover{color:#FD3A13;}}
+	& a{
+		padding: 6px 13px;text-decoration:none;display:block;color:#ca1b1b;
+		border-left: 1px solid #2b2b2b;float: left;
+		&:hover{color:#FD3A13;}
+		&:last-child{border-right: 1px solid #2b2b2b;}
+	}
+
+	& .navbar{padding:0px;}
 }
 .small-top{border-bottom: 1px solid #2b2b2b;background-color:#000000;}
 .bot{background-color:#141517;}
 .admin{
 	float:right;
 	& a{padding-right: 20px;text-decoration:none;display:block;color:white;
-		&:hover{color:#FD3A13;}}
+		&:last-child{padding-right: 0em;}
+		&:hover{color:#FD3A13;}
+	}
 	& li{
 		padding-right: 0.5em;
 		&:last-child{padding-right: 0em;}
 	}
+	& .nav-item{position: relative;}
+	.new{
+		width:10px;
+		height:10px;
+		background-color:red;
+		position: absolute;
+		border-color:#141517;
+		border:1px solid;
+		top:0px;
+		left: 10px;
+		z-index:1; 
+	}
 }
+
+	.nav-link{
+		font-weight: bold;
+	}
+
+	#menu>ul>li{
+		&.active{border-bottom: 2px solid red;}
+		&:hover{border-bottom: 2px solid red;}
+	}
+	.navbar-light .navbar-nav .nav-link{
+		&:hover{color:black;}
+		color:black;
+	}
+
+	#search{
+		position: relative;
+		&:hover input{width:100%;}
+		input{
+			width:0px;
+			background-color:#d0d0d0;
+			transition: width 0.5s;
+			transition-timing-function:ease-in 2s;
+			float: right;
+
+		}
+		button{
+			position: absolute;
+			right: 0px;
+			top:0px;
+			z-index: 1;
+		}
+		.btn-search{background-color:#FD3A13;color:white;}
+	}

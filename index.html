@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Ne - Bootsrap 4 #user-interface #slider #layouts #card user #lists - Bootsnipp.com</title>
+	<title>News Template - Bootsrap 4 #user-interface #slider #layouts #card user #lists - Bootsnipp.com</title>
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
@@ -26,7 +26,8 @@
 							<li class="nav-item"><a href="" class="fa fa fa-google-plus"></a></li>
 							<li class="nav-item"><a href="" class="fa fa fa-linkedin"></a></li>
 							<li class="nav-item"><a href="" class="fa fa-youtube"></a></li>
-							
+							<li class="nav-item"><a href="" class="fa fa-vimeo-square"></a></li>
+							 
 						</ul>
 					</nav>
 					</div>
@@ -40,17 +41,20 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
-						<div class="title">Grafreez News</div>
+						<div class="title font-weight-bold">Grafreez News</div>
 						<div class="sub-title">Get the latest News</div>
 					</div>
 					<div class="col-lg-6">
-						<div class="admin clearfix">
+						<div class="admin">
 							<nav class="navbar navbar-expand">
 								<ul class=" nav navbar">
-									<li class="nav-item"><a href="" class="fa fa-envelope-o"></a><span class="ping"></span></li>
+									<li class="nav-item">
+										<a href="" class="fa fa-envelope-o"></a>
+										<span class="new rounded-circle"></span>
+									</li>
 									<li class="nav-item"><a href="" class="fa fa-bell-o"></a></li>
 									<li class="nav-item"><a href="" >Bruce Wayne
-										<img class="rounded-circle" width="50px;" src="http://grafreez.com/wp-content/temp_demos/river/img/admin-bg.jpg"></a>
+										<img class="rounded-circle" width="50px;" src="/assets/images/admin-bg.jpg"></a>
 									</li>
 								</ul>
 							</nav>
@@ -64,8 +68,8 @@
 		<!-- end header -->
 		<div class="menu bg-light navbar-light">
 			<div class="container ">
-				<nav class="navbar navbar-expand-sm">
-					<ul class="navbar-nav m-auto">
+				<nav class="navbar navbar-expand-sm" id="menu">
+					<ul class="navbar-nav">
 						<li class="nav-item active">
 							<a class="nav-link" href="#">HOME</a>
 						</li>
@@ -93,8 +97,11 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">HEALTH</a>
 						</li>
-						
 					</ul>
+					<form class="ml-auto" id="search">
+						<input type="text" class="form-control clearfix" placeholder="Search">
+						<button class="btn btn-search"><i class="fa fa-search"></i></button>
+					</form>
 				</nav>
 			</div>
 
@@ -107,7 +114,7 @@
 						<div class="row">
 							<div class="col-lg-6">
 								<div class="card mb-2">
-									<img src="http://grafreez.com/wp-content/temp_demos/river/img/politics.jpg" class="img-fluid">
+									<img src="/assets/images/politics.jpg" class="img-fluid">
 									<div class="card-img-overlay"><span class="badge badge-pill badge-danger">News</span></div>
 									<div class="card-title ml-2">Syria war: Why the battle for Aleppo matters</div>
 									<div class="card-text text-danger">3 mins ago</div>
@@ -116,7 +123,7 @@
 							</div>
 							<div class="col-lg-6">
 								<div class="card mb-2">
-									<img src="http://grafreez.com/wp-content/temp_demos/river/img/politics.jpg" class="img-fluid">
+									<img src="/assets/images/politics.jpg" class="img-fluid">
 									<div class="card-img-overlay"><span class="badge badge-pill badge-danger">News</span></div>
 									<div class="card-title ml-2">Syria war: Why the battle for Aleppo matters</div>
 									<div class="card-text text-danger">3 mins ago</div>
@@ -125,7 +132,7 @@
 							</div>
 							<div class="col-lg-6">
 								<div class="card mb-2">
-									<img src="http://grafreez.com/wp-content/temp_demos/river/img/politics.jpg" class="img-fluid">
+									<img src="/assets/images/politics.jpg" class="img-fluid">
 									<div class="card-img-overlay"><span class="badge badge-pill badge-danger">News</span></div>
 									<div class="card-title ml-2">Syria war: Why the battle for Aleppo matters</div>
 									<div class="card-text text-danger">3 mins ago</div>
@@ -134,7 +141,7 @@
 							</div>
 							<div class="col-lg-6">
 								<div class="card mb-2">
-									<img src="http://grafreez.com/wp-content/temp_demos/river/img/politics.jpg" class="img-fluid">
+									<img src="/assets/images/politics.jpg" class="img-fluid">
 									<div class="card-img-overlay"><span class="badge badge-pill badge-danger">News</span></div>
 									<div class="card-title ml-2">Syria war: Why the battle for Aleppo matters</div>
 									<div class="card-text text-danger">3 mins ago</div>
@@ -157,7 +164,7 @@
 							</ol> -->
 							<div class="carousel-inner" role="listbox">
 								<div class="carousel-item active">
-									<img class="d-block w-100" src="http://grafreez.com/wp-content/temp_demos/river/img/tech.jpg" alt="First slide">
+									<img class="d-block w-100" src="/assets/images/health.jpg" alt="First slide">
 
 									<div class="titlecarousel" style="font-size: 25px;"><a href="">Key Republican Senator Says She Will Not Vote for former president!</a></div>
 									<div class="subtitle">Condimentum ultrices mi est a arcu at cum a elementum per cum turpis dui vulputate vestibulum in vehicula montes vel. Mauris nam suspendisse consectetur mus...</div>
@@ -165,13 +172,13 @@
 									
 								</div>
 								<div class="carousel-item ">
-									<img class="d-block w-100" src="http://grafreez.com/wp-content/temp_demos/river/img/health.jpg" alt="Second slide">
+									<img class="d-block w-100" src="/assets/images/health.jpg" alt="Second slide">
 									<div class="titlecarousel" style="font-size: 25px;"><a href="">Key Republican Senator Says She Will Not Vote for former president!</a></div>
 									<div class="subtitle">Condimentum ultrices mi est a arcu at cum a elementum per cum turpis dui vulputate vestibulum in vehicula montes vel. Mauris nam suspendisse consectetur mus...</div>
 									<div class="time"><strong>2h ago</strong></div>
 								</div>
 								<div class="carousel-item">
-									<img class="d-block w-100" src="http://grafreez.com/wp-content/temp_demos/river/img/travel.jpg" alt="Third slide">
+									<img class="d-block w-100" src="/assets/images/travel.jpg" alt="Third slide">
 									<div class="titlecarousel" style="font-size: 25px;"><a href="">Key Republican Senator Says She Will Not Vote for former president!</a></div>
 									<div class="subtitle">Condimentum ultrices mi est a arcu at cum a elementum per cum turpis dui vulputate vestibulum in vehicula montes vel. Mauris nam suspendisse consectetur mus...</div>
 									<div class="time"><strong>2h ago</strong></div>
@@ -194,7 +201,7 @@
 						<div class="row">
 							<div class="col-lg-6">
 								<div class="card">
-									<img src="http://grafreez.com/wp-content/temp_demos/river/img/war.jpg" class="img-fluid">
+									<img src="/assets/images/war.jpg" class="img-fluid">
 									<div class="card-title ml-2 font-weight-bold"><a href="">Minorities Suffer From Unequal Pain Treatment</a></div>
 									<div class="card-subtitle ml-2">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
 									<div class="card-text text-danger font-italic">3 mins ago</div>
@@ -203,7 +210,7 @@
 							</div>
 							<div class="col-lg-6">
 								<div class="card mb-5">
-									<img src="http://grafreez.com/wp-content/temp_demos/river/img/politics.jpg" class="img-fluid">
+									<img src="/assets/images/politics.jpg" class="img-fluid">
 									<div class="card-title ml-2 font-weight-bold"><a href="">Minorities Suffer From Unequal Pain Treatment</a></div>
 									<div class="card-subtitle ml-2">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
 									<div class="card-text text-danger font-italic">3 mins ago</div>
@@ -212,7 +219,7 @@
 							</div>
 							<div class="col-lg-6">
 								<div class="card">
-									<img src="http://grafreez.com/wp-content/temp_demos/river/img/war.jpg" class="img-fluid">
+									<img src="/assets/images/war.jpg" class="img-fluid">
 									<div class="card-title ml-2 font-weight-bold"><a href="">Minorities Suffer From Unequal Pain Treatment</a></div>
 									<div class="card-subtitle ml-2">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
 									<div class="card-text text-danger font-italic">3 mins ago</div>
@@ -221,7 +228,7 @@
 							</div>
 							<div class="col-lg-6">
 								<div class="card">
-									<img src="http://grafreez.com/wp-content/temp_demos/river/img/war.jpg" class="img-fluid">
+									<img src="/assets/images/war.jpg" class="img-fluid">
 									<div class="card-title ml-2 font-weight-bold"><a href="">Minorities Suffer From Unequal Pain Treatment</a></div>
 									<div class="card-subtitle ml-2">Some quick example text to build on the card title and make up the bulk of the card's content.</div>
 									<div class="card-text text-danger font-italic">3 mins ago</div>
@@ -255,7 +262,7 @@
 						</div>
 						<div class="box mb-3">
 							<div class="media">
-								<div class="media-heading"><img src="http://grafreez.com/wp-content/temp_demos/river/img/sport2.jpg" width="150em"></div>
+								<div class="media-heading"><img src="/assets/images/sport2.jpg" width="150em"></div>
 								<div class="media-body ml-2"><a href="">Key Republicans sign letter warning against candidate</a>
 									<div class="time">1h ago</div>
 								</div>
@@ -264,7 +271,7 @@
 						</div>
 						<div class="box mb-3">
 							<div class="media">
-								<div class="media-heading"><img src="http://grafreez.com/wp-content/temp_demos/river/img/sport2.jpg" width="150em"></div>
+								<div class="media-heading"><img src="/assets/images/sport2.jpg" width="150em"></div>
 								<div class="media-body ml-2"><a href="">Key Republicans sign letter warning against candidate</a>
 									<div class="time">1h ago</div>
 								</div>
@@ -273,7 +280,7 @@
 						</div>
 						<div class="box mb-3">
 							<div class="media">
-								<div class="media-heading"><img src="http://grafreez.com/wp-content/temp_demos/river/img/sport2.jpg" width="150em"></div>
+								<div class="media-heading"><img src="/assets/images/sport2.jpg" width="150em"></div>
 								<div class="media-body ml-2"><a href="">Key Republicans sign letter warning against candidate</a>
 									<div class="time">1h ago</div>
 								</div>

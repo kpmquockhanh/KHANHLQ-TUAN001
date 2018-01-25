@@ -4,19 +4,27 @@
   font-size: 30px; }
 
 .title {
-  font-size: 25px;
+  font-size: 36px;
   color: white; }
 
 .sub-title {
-  color: white; }
+  color: white;
+  font-size: 14px; }
 
 .social a {
-  padding-right: 20px;
+  padding: 6px 13px;
   text-decoration: none;
   display: block;
-  color: #ca1b1b; }
+  color: #ca1b1b;
+  border-left: 1px solid #2b2b2b;
+  float: left; }
   .social a:hover {
     color: #FD3A13; }
+  .social a:last-child {
+    border-right: 1px solid #2b2b2b; }
+
+.social .navbar {
+  padding: 0px; }
 
 .small-top {
   border-bottom: 1px solid #2b2b2b;
@@ -32,9 +40,56 @@
     text-decoration: none;
     display: block;
     color: white; }
+    .admin a:last-child {
+      padding-right: 0em; }
     .admin a:hover {
       color: #FD3A13; }
   .admin li {
     padding-right: 0.5em; }
     .admin li:last-child {
       padding-right: 0em; }
+  .admin .nav-item {
+    position: relative; }
+  .admin .new {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    border-color: #141517;
+    border: 1px solid;
+    top: 0px;
+    left: 10px;
+    z-index: 1; }
+
+.nav-link {
+  font-weight: bold; }
+
+#menu > ul > li.active {
+  border-bottom: 2px solid red; }
+
+#menu > ul > li:hover {
+  border-bottom: 2px solid red; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: black; }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: black; }
+
+#search {
+  position: relative; }
+  #search:hover input {
+    width: 100%; }
+  #search input {
+    width: 0px;
+    background-color: #d0d0d0;
+    transition: width 0.5s;
+    transition-timing-function: ease-in 2s;
+    float: right; }
+  #search button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1; }
+  #search .btn-search {
+    background-color: #FD3A13;
+    color: white; }
